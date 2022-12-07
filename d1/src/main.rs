@@ -2238,8 +2238,6 @@ static CONTENTS: &str =  "7896
 fn main() {
     let mut max_calories = CONTENTS
         .split("\n\n")
-        .collect::<Vec<&str>>()
-        .into_iter()
         .map(|x| x
             .split("\n")
             .collect::<Vec<&str>>()
